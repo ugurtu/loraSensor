@@ -192,11 +192,11 @@ void loop()
         for(int i = 0; i < counter; i++){ 
           radio.transmit(saveData[i]);
           all_pins_low();
+            
         }
-          counter = 0;
-          memset(saveData, 0, sizeof(saveData));
        }
-        
+        counter = 0;
+        memset(saveData, 0, sizeof(saveData));
 
 #if DEBUG_OUT_ENABLE
         //code end
